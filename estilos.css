@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.div-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    max-width: 100vw;
+    min-width: 100vh;
+}
+nav{
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+nav ul{
+    position: absolute;
+    display: flex;
+    right: 0;
+}
+nav ul >li{
+    list-style: none;
+    margin: 10px;
+    line-height: 50px;
+    cursor: pointer;
+    font-weight: 500;
+}
+nav ul>li:hover{
+    text-decoration: underline;
+}
+nav ul .logo-grid >img{
+    padding: 7px;
+    transform: translateY(6px);
+}
+nav ul .logo-grid > img:hover{
+    background-color: #f1f3f4;
+    border-radius: 50%;
+}
+nav ul .logo-google > img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transform: translateY(10px);
+}
+header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+}
+header h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+header div{
+    text-align: center;
+}
+header .input-div .div-para-sombra > input{
+    width: 495px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+header .input-div .div-para-sombra > input::placeholder{
+    font-weight: 500;
+    font-size: 15px;
+}
+header .input-div .div-para-sombra{
+    position: relative;
+    height: 42px;
+    width: 570px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 4px #808080;
+    transform: translateX(10px);
+}
+header .input-div .icono-buscar,
+header .input-div .icono-microfono{
+    position: absolute;
+    height: 40px;
+    line-height: 50px;
+    cursor: pointer;
+}
+header .input-div .icono-buscar{
+    transform: translateX(-26px);
+}
+header .add-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+    height: 105px;
+    margin: auto;
+    border-radius: 3px;
+}
+header .add-icon img{
+    height: 45px;
+    width: 45px;
+    padding: 10px;
+    background-color: #f1f3f4;
+    border-radius: 50%;
+}
+header .add-icon p{
+    margin-top: 15px;
+    font-weight: 300;
+}
+header .add-icon:hover{
+    background-color: #aeaeab;
+    cursor: pointer;
+}
+.div-container .personalizar{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 20px;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: #202124;
+}
+.div-container .personalizar span{
+    display: inline-block;
+    font-size: 1.3rem;
+    transform: translateY(-4px);
+    font-weight: 600;
+    color: #83abea;
+}
+.div-container .personalizar img{
+    width: 15px;
+    height: 15px;
+}
